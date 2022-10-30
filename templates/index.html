@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction for U</title>
+</head>
+
+<body style="background-color: rgb(169, 125, 150);">
+
+    <h1>Car Price Prediction </h1>
+    <form method="POST" action="/predict_price">
+        
+        <label>Symboling:</label>
+        <input type = "text" name = "symboling">
+        </select>
+
+        
+        <label>Normalized_losses:</label>
+        <input type = "text" name = "normalized_losses">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Fuel_type:</label>
+        <select name = "fuel_type">
+            <option value = "gas">Gas</option>
+            <option value = "diesel">Diesel</option>
+        </select>
+
+        
+        
+       
+        <label>Aspiration:</label>
+        <select name = "aspiration">
+            <option value = "turbo">Turbo</option>
+            <option value = "std">Std</option>
+            
+        </select>
+        
+        <br>
+        <br>
+        <label>Num_of_doors:</label>
+        <select name = "num_of_doors">
+            <option value = "four">Four</option>
+            <option value = "two">Two</option>
+        </select>
+        
+        
+        <label>Drive_wheels:</label>
+        <select name = "drive_wheels">
+            <option value = "4wd">4wd</option>
+            <option value = "rwd">rwd</option>
+            <option value = "fwd">fwd</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Engine_location:</label>
+        <select name = "engine_location">
+            <option value = "front">Front</option>
+            <option value = "rear">Rear</option>
+            
+        </select>
+
+        
+        
+        
+        <label>Wheel_base:</label>
+        <input type = "text" name = "wheel_base">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Length:</label>
+        <input type = "text" name = "length">
+        </select>
+       
+        
+        <label>Width:</label>
+        <input type = "text" name = "width">
+        </select>
+
+        <br>
+        <br>
+        <label>Height:</label>
+        <input type = "text" name = "height">
+        </select>
+
+        
+        <label>Curb_weight:</label>
+        <input type = "text" name = "curb_weight">
+        </select>
+
+        <br>
+        <br>
+        <label>Num_of_cylinders:</label>
+        <select name = "num_of_cylinders">
+            <option value = "four" >4</option>
+            <option value = "six" >6</option>
+            <option value = "five" >5</option>
+            <option value = "eight" >8</option>
+            <option value = "two" >2</option>
+            <option value = "three" >3</option>
+            <option value = "twelve" >12</option>
+        </select>
+        
+        
+        <label>Engine_size:</label>
+        <input type = "text" name = "engine_size">
+        </select>
+
+        <br>
+        <br>
+        <label>Bore:</label>
+        <input type = "text" name = "bore">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Stroke:</label>
+        <input type = "text" name = "stroke">
+        </select>
+
+        
+
+        <label>Compression_ratio:</label>
+        <input type = "text" name = "compression_ratio">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Horsepower:</label>
+        <input type = "text" name = "horsepower">
+        </select>
+
+        
+       
+        <label>Peak_rpm:</label>
+        <input type = "text" name = "peak_rpm">
+        </select>
+
+        <br>
+        <br>
+        <label>City_mpg:</label>
+        <input type = "text" name = "city_mpg">
+        </select>
+
+        
+        <label>Highway_mpg:</label>
+        <input type = "text" name = "highway_mpg">
+        </select>
+
+        <br>
+        <br>
+       
+        <label>Make:</label>
+        <select name = "make">
+            <option value = "alfa-romero">Alfa-romero</option>
+            <option value = "audi">Audi</option>
+            <option value = "bmw">Bmw</option>
+            <option value = "chevrolet">chevrolet</option>
+            <option value = "dodge">Dodge</option>
+            <option value = "honda">Honda</option>
+            <option value = "isuzu">Isuzu</option>
+            <option value = "jaguar">Jaguar</option>
+            <option value = "mazda">Mazda</option>
+            <option value = "mercedes-benz">Mercedes-benz</option>
+            <option value = "mercury">Mercury</option>
+            <option value = "mitsubishi">Mitsubishi</option>
+            <option value = "nissan">Nissan</option>
+            <option value = "peugot">Peugot</option>
+            <option value = "plymouth">Plymouth</option>
+            <option value = "porsche">Porsche</option>
+            <option value = "renault">Renault</option>
+            <option value = "saab">Saab</option>
+            <option value = "subaru">Subaru</option>
+            <option value = "toyota">Toyota</option>
+            <option value = "volkswagen">Volkswagen</option>
+            <option value = "volvo">Volvo</option>
+        </select>
+
+        
+       
+        <label>Body_style:</label>
+        <select name = "body_style">
+            <option value = "convertible">Convertible</option>
+            <option value = "hardtop">Hardtop</option>
+            <option value = "hatchback">Hatchback</option>
+            <option value = "sedan">Sedan</option>
+            <option value = "wagon">Wagon</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <label>Engine_type:</label>
+        <select name = "engine_type">
+            <option value = "ohc">Ohc</option>
+            <option value = "ohcf">Ohcf</option>
+            <option value = "ohcv">Ohcv</option>
+            <option value = "dohc">Dohc</option>
+            <option value = "l">L</option>
+            <option value = "rotor">Rotor</option>
+            <option value = "dohcv">Dohcv</option>
+        </select>
+
+        
+        
+        
+        <label>Fuel_system:</label>
+        <select name = "fuel_system">
+            <option value = "mpfi">Mpfi</option>
+            <option value = "2bbl">2bbl</option>
+            <option value = "mfi">Mfi</option>
+            <option value = "1bbl">1bbl</option>
+            <option value = "spfi">Spfi</option>
+            <option value = "4bbl">4bbl</option>
+            <option value = "idi">Idi</option>
+            <option value = "spdi">Spdi</option>
+        </select>
+
+        <br>
+        <br>
+        
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your Price will be <b> {{ prediction }} /- $.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
